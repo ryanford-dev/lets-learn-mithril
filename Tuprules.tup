@@ -1,0 +1,5 @@
+ROOT = $(TUP_CWD)
+DIST = $(ROOT)/dist
+
+!copy = |> ^ copy %f^ cp %f %o |>
+!minify = |> ^ minifying %f^ jsmin <%f >%o |>
